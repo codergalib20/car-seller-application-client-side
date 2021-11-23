@@ -1,0 +1,118 @@
+/* ==========================Banner Section Style======================== */
+.animation-ball {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 50% 45% / 50% 30%;
+  background-color: #e83a3b;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 600px) {
+  .animation-ball {
+    width: 250px;
+    height: 250px;
+  }
+}
+.animation-ball::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  border-radius: 50% 35% / 50% 20%;
+  background-color: #ff000050;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  animation: ball-animation 5s linear infinite;
+  transform: rotate(0deg);
+}
+@keyframes ball-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===================Products Section Style=================== */
+.card-shadow {
+  background: #e83a3a9f;
+  bottom: -100%;
+  right: -100%;
+  transition: all 0.5s ease-in-out;
+}
+.service-card:hover .card-shadow {
+  bottom: 0;
+  right: 0;
+}
+/* TESTIMONIAL SECTION DESIGNE */
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 100px 0;
+}
+.swiper-wrapper {
+  display: flex;
+}
+.swiper-slide {
+  width: 30%;
+  min-width: 300px;
+  background: #424247;
+}
+.swiper-slide .card {
+  position: relative;
+  padding-top: 20px;
+}
+.swiper-slide .card .card_img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: -30px;
+  right: 10%;
+}
+.swiper-slide .card .card_img img {
+  max-width: 120%;
+}
+.swiper-slide .card .card_body {
+  /* margin-top: 50px; */
+  padding: 30px;
+}
+.swiper-slide .card .card_body .name {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 5px 0;
+  color: #fff;
+}
+.swiper-slide .card .card_body .profession {
+  font-size: 13px;
+  font-style: italic;
+  display: block;
+  color: #777;
+}
+.swiper-slide .card .card_body .info {
+  font-size: 13px;
+  padding: 7px 0;
+  color: #777;
+}
+.swiper-slide .card .card_body .rating {
+  display: block;
+  background: #222;
+  width: 110px;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 50px;
+}
+.swiper-slide .card .card_body .rating span {
+  font-size: 10px;
+  margin: 0 1px;
+}
+.swiper-slide .card .card_body .rating .rated {
+  color: yellow;
+}
+.swiper-slide .card .card_body .rating .un_rated {
+  color: #777;
+}

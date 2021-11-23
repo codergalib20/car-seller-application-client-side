@@ -1,0 +1,161 @@
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #fff;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.menu-handle {
+  display: none;
+}
+
+@media only screen and (max-width: 1026px) {
+  .login-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  #responsive-menus-no-toggle {
+    left: 0;
+    position: absolute;
+    top: 9%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(120, 54, 15, 0.645),
+        rgba(120, 54, 15, 0.645)
+      ),
+      url(https://i.ibb.co/py7p0Kc/banner-2-bg-2.jpg) no-repeat top center;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    z-index: 100000000000000001;
+  }
+  #responsive-menus-no-toggle ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  #responsive-menus {
+    position: absolute;
+    top: 9%;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(120, 54, 15, 0.645),
+        rgba(120, 54, 15, 0.645)
+      ),
+      url(https://i.ibb.co/py7p0Kc/banner-2-bg-2.jpg) no-repeat top center;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    z-index: 100000000000000001;
+  }
+  #responsive-menus ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  .menu-link {
+    color: #fff !important;
+    margin-top: 1rem;
+  }
+
+  /*----------Responsive Toggle Menu Icon--------*/
+  .menu-handle {
+    display: block;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+  }
+  .menu-handle:hover {
+    color: #e83a3b;
+  }
+}
